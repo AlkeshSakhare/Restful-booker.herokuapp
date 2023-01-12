@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="4" ignored="0" total="7" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="14940" started-at="2023-01-12T13:36:33 IST" finished-at="2023-01-12T13:36:48 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="14940" started-at="2023-01-12T13:36:33 IST" finished-at="2023-01-12T13:36:48 IST">
+      <class name="tests.RestfulbookerTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.RestfulbookerTest@1e965684]" name="setUp" is-config="true" duration-ms="629" started-at="2023-01-12T13:36:33 IST" finished-at="2023-01-12T13:36:34 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="CreateTokenTest()[pri:1, instance:tests.RestfulbookerTest@1e965684]" name="CreateTokenTest" duration-ms="3631" started-at="2023-01-12T13:36:34 IST" finished-at="2023-01-12T13:36:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateTokenTest -->
+        <test-method status="PASS" signature="GetBookingTest()[pri:2, instance:tests.RestfulbookerTest@1e965684]" name="GetBookingTest" duration-ms="2333" started-at="2023-01-12T13:36:38 IST" finished-at="2023-01-12T13:36:40 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetBookingTest -->
+        <test-method status="PASS" signature="CreateBookingTest()[pri:3, instance:tests.RestfulbookerTest@1e965684]" name="CreateBookingTest" duration-ms="1575" started-at="2023-01-12T13:36:40 IST" finished-at="2023-01-12T13:36:41 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateBookingTest -->
+        <test-method status="FAIL" signature="GetBookingIdTest()[pri:4, instance:tests.RestfulbookerTest@1e965684]" name="GetBookingIdTest" duration-ms="2347" started-at="2023-01-12T13:36:41 IST" finished-at="2023-01-12T13:36:44 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected status code <200> but was <404>.
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <404>.
+
+at listners.ExtentReporterNG.onTestFailure(ExtentReporterNG.java:33)
+at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:96)
+at org.testng.internal.TestInvoker.runTestResultListener(TestInvoker.java:220)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:657)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetBookingIdTest -->
+        <test-method status="FAIL" signature="UpdateBookingTest()[pri:5, instance:tests.RestfulbookerTest@1e965684]" name="UpdateBookingTest" duration-ms="1346" started-at="2023-01-12T13:36:44 IST" finished-at="2023-01-12T13:36:45 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected status code <201> but was <404>.
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <201> but was <404>.
+
+at listners.ExtentReporterNG.onTestFailure(ExtentReporterNG.java:33)
+at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:96)
+at org.testng.internal.TestInvoker.runTestResultListener(TestInvoker.java:220)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:657)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UpdateBookingTest -->
+        <test-method status="FAIL" signature="PartialUpdateBookingTest()[pri:6, instance:tests.RestfulbookerTest@1e965684]" name="PartialUpdateBookingTest" duration-ms="1360" started-at="2023-01-12T13:36:45 IST" finished-at="2023-01-12T13:36:46 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected status code <200> but was <404>.
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <404>.
+
+at listners.ExtentReporterNG.onTestFailure(ExtentReporterNG.java:33)
+at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:96)
+at org.testng.internal.TestInvoker.runTestResultListener(TestInvoker.java:220)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:657)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PartialUpdateBookingTest -->
+        <test-method status="FAIL" signature="DeleteBookingTest()[pri:7, instance:tests.RestfulbookerTest@1e965684]" name="DeleteBookingTest" duration-ms="1347" started-at="2023-01-12T13:36:46 IST" finished-at="2023-01-12T13:36:48 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected status code <200> but was <404>.
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <404>.
+
+at listners.ExtentReporterNG.onTestFailure(ExtentReporterNG.java:33)
+at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:96)
+at org.testng.internal.TestInvoker.runTestResultListener(TestInvoker.java:220)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:657)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteBookingTest -->
+      </class> <!-- tests.RestfulbookerTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
