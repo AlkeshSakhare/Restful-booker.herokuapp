@@ -49,31 +49,24 @@
 			<version>1.1.1</version>
 		</dependency>
 
-<<<<<<< HEAD
 
-=======
-	
->>>>>>> 0091c4a (restful)
 		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi-ooxml</artifactId>
 			<version>4.0.1</version>
 		</dependency>
-<<<<<<< HEAD
+
 
 		<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
-=======
-		
-			<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
->>>>>>> 0091c4a (restful)
+
 		<dependency>
 			<groupId>com.aventstack</groupId>
 			<artifactId>extentreports</artifactId>
 			<version>5.0.9</version>
 		</dependency>
 	</dependencies>
-<<<<<<< HEAD
+
 
 	<build>
 		<plugins>
@@ -97,9 +90,6 @@
 				</configuration>
 			</plugin>
 		</plugins>
-
-
 	</build>
-=======
->>>>>>> 0091c4a (restful)
+
 </project>
