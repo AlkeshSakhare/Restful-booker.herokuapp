@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/4/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/6/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jan 12 13:36:33 IST 2023</td>
+<td>Started on:</td><td>Tue Jan 31 11:04:27 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>14 seconds (14940 ms)</td>
+<tr><td>Total time:</td><td>12 seconds (12019 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,15 +75,63 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.RestfulbookerTest.DeleteBookingTest()'><b>DeleteBookingTest</b><br>Test class: tests.RestfulbookerTest</td>
+<td title='tests.CreateTokenTest.createTokenTest()'><b>createTokenTest</b><br>Test class: tests.CreateTokenTest<br>Parameters: username1, empty</td>
 <td><div><pre>java.lang.AssertionError: 1 expectation failed.
-Expected status code &lt;200&gt; but was &lt;404&gt;.
+Response body doesn&apos;t match expectation.
+Expected: a string containing &quot;token&quot;
+  Actual: {&quot;reason&quot;:&quot;Bad credentials&quot;}
 
 	at listners.ExtentReporterNG.onTestFailure(ExtentReporterNG.java:33)
 	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace244229783", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace244229783'><pre>java.lang.AssertionError: 1 expectation failed.
-Expected status code &lt;200&gt; but was &lt;404&gt;.
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2055288499", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2055288499'><pre>java.lang.AssertionError: 1 expectation failed.
+Response body doesn&apos;t match expectation.
+Expected: a string containing &quot;token&quot;
+  Actual: {&quot;reason&quot;:&quot;Bad credentials&quot;}
+
+	at listners.ExtentReporterNG.onTestFailure(ExtentReporterNG.java:33)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:96)
+	at org.testng.internal.TestInvoker.runTestResultListener(TestInvoker.java:220)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:657)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>3</td>
+<td>tests.CreateTokenTest@33f88ab</td></tr>
+<tr>
+<td title='tests.CreateTokenTest.createTokenTest()'><b>createTokenTest</b><br>Test class: tests.CreateTokenTest<br>Parameters: empty, password</td>
+<td><div><pre>java.lang.AssertionError: 1 expectation failed.
+Response body doesn&apos;t match expectation.
+Expected: a string containing &quot;token&quot;
+  Actual: {&quot;reason&quot;:&quot;Bad credentials&quot;}
+
+	at listners.ExtentReporterNG.onTestFailure(ExtentReporterNG.java:33)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1995986600", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1995986600'><pre>java.lang.AssertionError: 1 expectation failed.
+Response body doesn&apos;t match expectation.
+Expected: a string containing &quot;token&quot;
+  Actual: {&quot;reason&quot;:&quot;Bad credentials&quot;}
 
 	at listners.ExtentReporterNG.onTestFailure(ExtentReporterNG.java:33)
 	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:96)
@@ -113,57 +161,21 @@ Expected status code &lt;200&gt; but was &lt;404&gt;.
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>1</td>
-<td>tests.RestfulbookerTest@1e965684</td></tr>
+<td>tests.CreateTokenTest@33f88ab</td></tr>
 <tr>
-<td title='tests.RestfulbookerTest.GetBookingIdTest()'><b>GetBookingIdTest</b><br>Test class: tests.RestfulbookerTest</td>
+<td title='tests.CreateTokenTest.createTokenTest()'><b>createTokenTest</b><br>Test class: tests.CreateTokenTest<br>Parameters: username1, password1</td>
 <td><div><pre>java.lang.AssertionError: 1 expectation failed.
-Expected status code &lt;200&gt; but was &lt;404&gt;.
+Response body doesn&apos;t match expectation.
+Expected: a string containing &quot;token&quot;
+  Actual: {&quot;reason&quot;:&quot;Bad credentials&quot;}
 
 	at listners.ExtentReporterNG.onTestFailure(ExtentReporterNG.java:33)
 	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2089360295", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2089360295'><pre>java.lang.AssertionError: 1 expectation failed.
-Expected status code &lt;200&gt; but was &lt;404&gt;.
-
-	at listners.ExtentReporterNG.onTestFailure(ExtentReporterNG.java:33)
-	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:96)
-	at org.testng.internal.TestInvoker.runTestResultListener(TestInvoker.java:220)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:657)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:764)
-	at org.testng.TestRunner.run(TestRunner.java:585)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.runSuites(TestNG.java:1069)
-	at org.testng.TestNG.run(TestNG.java:1037)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>2</td>
-<td>tests.RestfulbookerTest@1e965684</td></tr>
-<tr>
-<td title='tests.RestfulbookerTest.PartialUpdateBookingTest()'><b>PartialUpdateBookingTest</b><br>Test class: tests.RestfulbookerTest</td>
-<td><div><pre>java.lang.AssertionError: 1 expectation failed.
-Expected status code &lt;200&gt; but was &lt;404&gt;.
-
-	at listners.ExtentReporterNG.onTestFailure(ExtentReporterNG.java:33)
-	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1472494238", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1472494238'><pre>java.lang.AssertionError: 1 expectation failed.
-Expected status code &lt;200&gt; but was &lt;404&gt;.
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace103433239", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace103433239'><pre>java.lang.AssertionError: 1 expectation failed.
+Response body doesn&apos;t match expectation.
+Expected: a string containing &quot;token&quot;
+  Actual: {&quot;reason&quot;:&quot;Bad credentials&quot;}
 
 	at listners.ExtentReporterNG.onTestFailure(ExtentReporterNG.java:33)
 	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:96)
@@ -193,17 +205,21 @@ Expected status code &lt;200&gt; but was &lt;404&gt;.
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>1</td>
-<td>tests.RestfulbookerTest@1e965684</td></tr>
+<td>tests.CreateTokenTest@33f88ab</td></tr>
 <tr>
-<td title='tests.RestfulbookerTest.UpdateBookingTest()'><b>UpdateBookingTest</b><br>Test class: tests.RestfulbookerTest</td>
+<td title='tests.CreateTokenTest.createTokenTest()'><b>createTokenTest</b><br>Test class: tests.CreateTokenTest<br>Parameters: admin, wrong</td>
 <td><div><pre>java.lang.AssertionError: 1 expectation failed.
-Expected status code &lt;201&gt; but was &lt;404&gt;.
+Response body doesn&apos;t match expectation.
+Expected: a string containing &quot;token&quot;
+  Actual: {&quot;reason&quot;:&quot;Bad credentials&quot;}
 
 	at listners.ExtentReporterNG.onTestFailure(ExtentReporterNG.java:33)
 	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace542019831", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace542019831'><pre>java.lang.AssertionError: 1 expectation failed.
-Expected status code &lt;201&gt; but was &lt;404&gt;.
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1172450799", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1172450799'><pre>java.lang.AssertionError: 1 expectation failed.
+Response body doesn&apos;t match expectation.
+Expected: a string containing &quot;token&quot;
+  Actual: {&quot;reason&quot;:&quot;Bad credentials&quot;}
 
 	at listners.ExtentReporterNG.onTestFailure(ExtentReporterNG.java:33)
 	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:96)
@@ -233,7 +249,95 @@ Expected status code &lt;201&gt; but was &lt;404&gt;.
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>1</td>
-<td>tests.RestfulbookerTest@1e965684</td></tr>
+<td>tests.CreateTokenTest@33f88ab</td></tr>
+<tr>
+<td title='tests.CreateTokenTest.createTokenTest()'><b>createTokenTest</b><br>Test class: tests.CreateTokenTest<br>Parameters: Null, Null</td>
+<td><div><pre>java.lang.AssertionError: 1 expectation failed.
+Response body doesn&apos;t match expectation.
+Expected: a string containing &quot;token&quot;
+  Actual: {&quot;reason&quot;:&quot;Bad credentials&quot;}
+
+	at listners.ExtentReporterNG.onTestFailure(ExtentReporterNG.java:33)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace40177529", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace40177529'><pre>java.lang.AssertionError: 1 expectation failed.
+Response body doesn&apos;t match expectation.
+Expected: a string containing &quot;token&quot;
+  Actual: {&quot;reason&quot;:&quot;Bad credentials&quot;}
+
+	at listners.ExtentReporterNG.onTestFailure(ExtentReporterNG.java:33)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:96)
+	at org.testng.internal.TestInvoker.runTestResultListener(TestInvoker.java:220)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:657)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>1</td>
+<td>tests.CreateTokenTest@33f88ab</td></tr>
+<tr>
+<td title='tests.CreateTokenTest.createTokenTest()'><b>createTokenTest</b><br>Test class: tests.CreateTokenTest<br>Parameters: empty, empty</td>
+<td><div><pre>java.lang.AssertionError: 1 expectation failed.
+Response body doesn&apos;t match expectation.
+Expected: a string containing &quot;token&quot;
+  Actual: {&quot;reason&quot;:&quot;Bad credentials&quot;}
+
+	at listners.ExtentReporterNG.onTestFailure(ExtentReporterNG.java:33)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace74606989", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace74606989'><pre>java.lang.AssertionError: 1 expectation failed.
+Response body doesn&apos;t match expectation.
+Expected: a string containing &quot;token&quot;
+  Actual: {&quot;reason&quot;:&quot;Bad credentials&quot;}
+
+	at listners.ExtentReporterNG.onTestFailure(ExtentReporterNG.java:33)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:96)
+	at org.testng.internal.TestInvoker.runTestResultListener(TestInvoker.java:220)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:657)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>1</td>
+<td>tests.CreateTokenTest@33f88ab</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -243,20 +347,10 @@ Expected status code &lt;201&gt; but was &lt;404&gt;.
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.RestfulbookerTest.CreateBookingTest()'><b>CreateBookingTest</b><br>Test class: tests.RestfulbookerTest</td>
+<td title='tests.CreateTokenTest.createTokenTest()'><b>createTokenTest</b><br>Test class: tests.CreateTokenTest<br>Parameters: admin, password123</td>
 <td></td>
 <td>1</td>
-<td>tests.RestfulbookerTest@1e965684</td></tr>
-<tr>
-<td title='tests.RestfulbookerTest.CreateTokenTest()'><b>CreateTokenTest</b><br>Test class: tests.RestfulbookerTest</td>
-<td></td>
-<td>3</td>
-<td>tests.RestfulbookerTest@1e965684</td></tr>
-<tr>
-<td title='tests.RestfulbookerTest.GetBookingTest()'><b>GetBookingTest</b><br>Test class: tests.RestfulbookerTest</td>
-<td></td>
-<td>2</td>
-<td>tests.RestfulbookerTest@1e965684</td></tr>
+<td>tests.CreateTokenTest@33f88ab</td></tr>
 </table><p>
 </body>
 </html>
