@@ -42,10 +42,22 @@ public class CreateTokenTest {
 		HashMap<String, String> body = new LinkedHashMap<String, String>();
 		body.put("username", username);
 		body.put("password", password);
-		Response res = RestAssured.given().filter(RequestLoggingFilter.logRequestTo(log))
+		Response res = RestAssured.
+				given()
+				.filter(RequestLoggingFilter.logRequestTo(log))
 				.filter(ResponseLoggingFilter.logResponseTo(log)).log().all()
-				.baseUri("https://restful-booker.herokuapp.com").basePath("auth").contentType(ContentType.JSON)
-				.accept(ContentType.JSON).body(body).when().post().then().log().all().extract().response();
+				.baseUri("https://restful-booker.herokuapp.com")
+				.basePath("auth")
+				.contentType(ContentType.JSON)
+				.accept(ContentType.JSON)
+				.body(body)
+			.when()
+				.post()
+			.then()
+				.log()
+				.all()
+				.extract()
+				.response();
 		Assert.assertTrue(res.getStatusCode() == 200);
 
 		res.then().assertThat().body(containsString("token"));
